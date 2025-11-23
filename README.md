@@ -1,33 +1,120 @@
-# Judul Project
-# Average-Restaurant
-## Repository Outline
-1. README.md - Penjelasan gambaran umum project.
-2. P0M1_yudhistira.ipynb - Notebook yang berisi pengolahan data restaurant dengan python.
-3. P0M1_yudhistira_dataset.csv - yang berisikan isi data yang akan diolah.
-4. sales_restaurant_clean.csv - yang berisikan isi data yang sudah di cleaning.
-5. assignment-rubics.png - panduan untuk penilaian.
-## Problem Background
-Analisis ini dibuat untuk membantu owner restaurant mengetahui jumlah penjualan produk makanan atau minuman yang paling laris, pendapatan tertinggi di kota / wilayah, kontribusi manajer, total pendapatan dari waktu ke waktu, dan pola dari rata - rata serta varians hasil penjualan untuk mendukung strategis bisnis yang berbasis data.
-## Project Output
-Dapat membantu owner restaurant untuk mengetahui rata - rata pendapatan keseluruhan dan antar kota, mengetahui produk makanan yang paling laris, mengetahui manager mana yang berkontribusi paling tinggi. Supaya owner restaurant dapat melakukan evaluasi pada setiap restaurant.
-Dashboard visualisasi data menggunakan Tableau
-## Data
-Sumber data restaurant untuk membantu dalam pengolahan data untuk mencari rata - rata pendapatan, makanan yang paling laris, pendapatan kota paling tinggi, dan manajer dengan kontribusi paling tinggi. Untuk karakteristik data memiliki 8 kolom, dengan 254 baris, tidak terdapat missing value.
+# 🍽️ Average Restaurant: Data-Driven Sales Analysis for Restaurant Performance Optimization
+## 🚀 Project Overview
 
-## Method
-Metode yang digunakan adalah 
-1. Statistik Deskriptif
-2. Statistik Inferensial (ANOVA)
-3. Visualisasi Data
-## Stacks
-1. Python
-2. Pandas
-3. Numpy
-4. Matplotlip
-5. Scipy
-6. Tableau
+<p align="center">  
+<img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Restaurant Icon" width="300"/>  
+</p>
 
-## Reference
-Dataset - Kaggle (https://www.kaggle.com/datasets/rohitgrewal/restaurant-sales-data/data)
-Dashboard Tableau - (https://public.tableau.com/app/profile/yudhistira.pandu.dewonoto/viz/DashboardRestaurant_17575156728100/DashboardRestaurant?publish=yes)
-Sales Restaurant
+---
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Data%20Science](https://img.shields.io/badge/Field-Data%20Science-orange)
+![Tableau](https://img.shields.io/badge/Visualization-Tableau-blueviolet)
+
+
+## 📁 Repository Outline
+- `README.md` — Dokumentasi utama project  
+- `P0M1_yudhistira.ipynb` — Notebook analisis data penjualan restoran  
+- `P0M1_yudhistira_dataset.csv` — Dataset mentah  
+- `sales_restaurant_clean.csv` — Dataset setelah data cleaning  
+- `assignment-rubics.png` — Rubrik penilaian  
+
+---
+
+## 🎯 Problem Background
+Dalam industri restoran yang sangat kompetitif, keputusan berbasis data menjadi kunci untuk meningkatkan performa penjualan dan efisiensi operasional.  
+Data penjualan dapat membantu owner memahami:
+
+- Produk paling laris  
+- Kota dengan pendapatan tertinggi  
+- Manajer dengan kontribusi terbesar  
+- Tren pendapatan dari waktu ke waktu  
+- Pola rata-rata dan varians pendapatan  
+
+Analisis ini memberikan pondasi kuat bagi pengambilan keputusan bisnis yang lebih terukur dan strategis.
+
+---
+
+## 🎯 Project Output
+Proyek ini menghasilkan:
+
+- 📊 Analisis rata-rata pendapatan keseluruhan & per kota  
+- 🍔 Identifikasi produk makanan atau minuman paling laris  
+- 🧑‍💼 Penilaian kontribusi setiap manajer  
+- 📈 Dashboard interaktif menggunakan **Tableau**  
+
+Insight ini dapat digunakan owner restoran untuk evaluasi performa, alokasi sumber daya, serta pengambilan keputusan strategis berbasis data.
+
+---
+
+## 📊 Data Overview
+**Dataset:** `P0M1_yudhistira_dataset.csv`  
+- **Jumlah Baris:** 254  
+- **Jumlah Kolom:** 8  
+- **Missing Value:** Tidak ada  
+
+Dataset berisi informasi terkait:  
+- Kota  
+- Produk  
+- Manajer  
+- Kuantitas  
+- Pendapatan  
+- Tanggal pemesanan  
+
+Data telah melalui proses cleaning dan hasilnya disimpan pada file `sales_restaurant_clean.csv`.
+
+---
+
+## ⚙️ Methodology
+
+### 1️⃣ Statistik Deskriptif  
+Untuk mengetahui rata-rata, varians, dan distribusi pendapatan & kuantitas.
+
+### 2️⃣ Statistik Inferensial (ANOVA)  
+Mengetahui apakah terdapat perbedaan signifikan pendapatan antar kota.
+
+### 3️⃣ Visualisasi Data  
+Menggunakan Matplotlib & Tableau untuk memetakan pola penjualan dan tren pendapatan.
+
+---
+
+## 🧠 Insight Utama
+
+- **Lisbon** menjadi kota dengan pendapatan tertinggi, dipengaruhi oleh performa beberapa restoran yang secara konsisten menghasilkan revenue besar.
+- **Paris & Berlin** menunjukkan pola pendapatan yang stabil namun relatif rendah, sehingga berpotensi menjadi fokus utama untuk strategi peningkatan performa.
+- Produk yang paling sering dibeli berasal dari kategori **makanan cepat saji**, menunjukkan preferensi konsumen terhadap menu yang cepat, mudah, dan terjangkau (*high-demand & affordable*).
+- Varians pendapatan antar kota tergolong tinggi, mengindikasikan perbedaan efektivitas manajemen dan potensi optimasi strategi berdasarkan lokasi.
+---
+
+## 💡 Business Recommendation
+Berdasarkan hasil analisis deskriptif, tren waktu, dan uji ANOVA, berikut rekomendasi strategis yang dapat diterapkan oleh restoran:
+- **Optimalkan strategi pemasaran di Paris & Berlin**, karena kedua kota menunjukkan performa pendapatan yang lebih rendah dibanding kota lainnya. Fokuskan promosi lokal, evaluasi lokasi, serta perbaikan operasional cabang.
+- **Fokus pada kategori makanan terlaris** untuk meningkatkan volume penjualan, misalnya melalui bundling, upselling, atau peningkatan tampilan menu.
+- **Terapkan best practice dari manajer berperforma tinggi** ke seluruh cabang untuk meningkatkan konsistensi operasional dan produktivitas antar-manajer.
+- **Pantau tren pendapatan secara berkala** (bulanan/mingguan) untuk mendeteksi perubahan pola penjualan dan mengambil keputusan cepat berbasis data.
+
+---
+
+## 🧩 Tech Stack
+- Python  
+- Pandas  
+- Numpy  
+- Matplotlib  
+- Scipy  
+- Statsmodels  
+- Tableau  
+
+---
+
+## 📚 Reference
+- Dataset: Kaggle  
+- Dashboard Tableau:  
+  https://public.tableau.com/app/profile/yudhistira.pandu.dewonoto/viz/DashboardRestaurant_17575156728100/DashboardRestaurant
+
+---
+
+<p align="center">  
+<img src="https://cdn-icons-png.flaticon.com/512/2920/2920283.png" alt="Food Icon" width="120"/>  
+</p>
+
